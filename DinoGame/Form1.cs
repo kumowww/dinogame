@@ -149,7 +149,7 @@ namespace DinoGame
 
         void OnKeyUp(object sender, KeyEventArgs e)
         {
-            // No action needed for key up in this simple game - In diesem einfachen Spiel ist zum Eingeben Taste keine Aktion erforderlich
+            // No action needed for key up in this simple game - In diesem einfachen Spiel ist zum Eingeben Taste keine Aktion erforderlich...
         }
 
 
