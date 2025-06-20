@@ -11,7 +11,7 @@ namespace DinoGame
         Rectangle dino = new Rectangle(50, 220, 44, 47);
         bool isJumping = false;
         int jumpSpeed = 0;
-        int force = 12;
+        int force = 12; 
         int score = 0;
         List<Rectangle> obstacles = new List<Rectangle>();
         Random rand = new Random();
@@ -23,7 +23,7 @@ namespace DinoGame
             this.Width = 800;
             this.Height = 300;
             this.Text = "Dino Game";
-            this.BackColor = Color.White;
+            this.BackColor = Color.Black;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
 
@@ -31,8 +31,7 @@ namespace DinoGame
             gameTimer.Tick += GameTick;
             this.Paint += DrawGame;
             this.KeyDown += OnKeyDown;
-            this.KeyUp += OnKeyUp;
-
+            this.KeyUp += OnKeyUp; 
             StartGame();
         }
 
@@ -98,7 +97,7 @@ namespace DinoGame
 
         void AddObstacle()
         {
-            int height = rand.Next(30, 60);
+            int height = rand.Next(30, 50);
             int width = rand.Next(20, 30);
             int y = 247 - height;
             int x = 800 + rand.Next(0, 100);
@@ -112,8 +111,9 @@ namespace DinoGame
             // Draw ground - Boden zeichnen
             g.FillRectangle(Brushes.Gray, 0, 267, 800, 5);
 
+
             // Draw dino (simple representation) - Dino zeichnen (einfache Darstellung)
-            g.FillRectangle(Brushes.Black, dino);
+            g.FillRectangle(Brushes.White, dino);
 
             // Draw obstacles - Hindernisse zeichnen
             foreach (var obs in obstacles)
@@ -122,12 +122,11 @@ namespace DinoGame
             }
 
             // Draw score - Unentschieden
-            g.DrawString("Score: " + score, new Font("Arial", 16), Brushes.Black, 650, 10);
-
+            g.DrawString("Score: " + score, new Font("Arial", 16), Brushes.White, 650, 10);
             if (gameOver)
             {
-                g.DrawString("GAME OVER", new Font("Arial", 32, FontStyle.Bold), Brushes.Red, 300, 100);
-                g.DrawString("Press Space to Restart", new Font("Arial", 16), Brushes.Black, 300, 150);
+                g.DrawString("GAME OVER", new Font("Georgia", 28, FontStyle.Bold), Brushes.Red, 300, 100);
+                g.DrawString(" Press Space to Restart", new Font("Georgia", 18), Brushes.White, 300, 150);
             }
         }
 

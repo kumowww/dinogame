@@ -17,3 +17,6 @@ build_property.RootNamespace = DinoGame
 build_property.ProjectDir = C:\Users\Er.kavalski\Downloads\dinog\DinoGame\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 

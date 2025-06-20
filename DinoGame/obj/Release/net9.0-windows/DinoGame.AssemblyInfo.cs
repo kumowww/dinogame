@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DinoGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+911176d4153625615c5fd28399fd0395f3a1e017")]
 [assembly: System.Reflection.AssemblyProductAttribute("DinoGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DinoGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
